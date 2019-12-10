@@ -1,0 +1,375 @@
+% Remember to Typeset with XeLaTeX
+
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+\usepackage{datetime}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text} 
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{7pt}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{{\Huge Felipe \textsc{Del Canto}}	\\
+		 {\large \monthname, \the\year }
+	}\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{Información Personal}
+
+\begin{tabular}{rl}
+    \textsc{Lugar y fecha de nacimiento:}	&	Santiago, Chile  | 9 de Agosto de 1992 \\
+    \textsc{Dirección:}   				&	Lynch Norte 388 Casa E, La Reina, Santiago, Chile \\
+    \textsc{Teléfono:}   				&	+56 9 6699 9859\\
+    \textsc{email:}     					&	\href{mailto:felipe.delcanto@icloud.com}{felipe.delcanto@icloud.com}
+\end{tabular}
+
+%Section: Work Experience at the top
+\section{Experiencia Laboral}
+\begin{tabular}{r|p{11cm}}
+\emph{Actual}
+ 	&	Ayudante Investigador \\
+\textsc{May 2017}
+	&	\footnotesize{Proyecto FONDECYT. Desarrollo de estrategias de inversión para fondos de pensiones.}	\\
+
+\multicolumn{2}{c}{} \\
+
+\textsc{Ago - Dic 2017}
+ 	&	Ayudante, Cálculo III (MAT1136), Pontificia Universidad Católica de Chile \\
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso orientado a estudiantes de Licenciatura en Matemáticas. Profesor: Martin Chuaqui}	\\
+
+\multicolumn{2}{c}{} \\
+
+\textsc{Ago - Dic 2017}
+ 	&	Ayudante, Introducción a la Economía (EAE105A), Pontificia Universidad Católica de Chile \\
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso de servicio orientado a estudiantes de Geografía. Profesor: Pinjas Albagli}	\\
+
+\multicolumn{2}{c}{} \\
+
+\textsc{Mar - Jul 2017}
+ 	&	Ayudante, Álgebra Lineal (MAT1226), Pontificia Universidad Católica de Chile \\
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso orientado a estudiantes de Licenciatura en Matemáticas. Profesor: Jan Kiwi}	\\
+
+\multicolumn{2}{c}{} \\
+
+\textsc{Ago - Dic 2016}
+ 	&	Ayudante, Álgebra Lineal (MAT1226), Pontificia Universidad Católica de Chile \\
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso orientado a estudiantes de Licenciatura en Matemáticas. Profesor: Alejandro Ramirez}	\\
+
+\multicolumn{2}{c}{} \\
+
+\textsc{Mar - Jul 2016}
+ 	&	Ayudante, Introducción al Cálculo (MAT1106), Pontificia Universidad Católica de Chile. \\
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso orientado a estudiantes de Licenciatura en Matemáticas. Profesor: Duvan Henao}	\\
+
+\multicolumn{2}{c}{} \\
+
+\textsc{Ago - Dic 2015}
+ 	&	Ayudante, Cálculo I (MAT1506), Pontificia Universidad Católica de Chile \\
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso orientado a estudiantes de Agronomía. Profesor: Álvaro Cofré}	\\
+
+\multicolumn{2}{c}{} \\
+
+\textsc{Ago - Dic 2015}
+ 	&	Ayudante, Cálculo I (MAT1610), Pontificia Universidad Católica de Chile \\
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso orientado a estudiantes de Ingeniería. Profesor: Luis Dissett}	\\
+\end{tabular}
+	
+%\multicolumn{2}{c}{} \\
+\begin{tabular}{r|p{11cm}}
+
+\textsc{Mar - Jul 2015}
+ 	&	Ayudante, Introducción al Cálculo (MAT1600), Pontificia Universidad Católica de Chile \\
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso orientado a estudiantes de College de Ciencias Naturales y Matemáticas. Profesor: Mario Ponce}	\\
+
+\multicolumn{2}{c}{} \\
+
+\textsc{2014 - 2015}
+ 	&	Jefe de Departamento de Matemática, Preuniversitario Gauss, Santiago, Chile \\
+	&	\footnotesize{Encargado de la planificación de los cursos de Matemáticas del Preuniversitario, de las jornadas extra programáticas del área, de la calidad y renovación del material didáctico utilizado y del desempeño de los profesores.}	\\
+
+\multicolumn{2}{c}{} \\
+
+\textsc{2013 - 2015}
+ 	&	Profesor, Preuniversitario Gauss, Santiago, Chile \\
+	&	\emph{Profesor de Matemática y Química}	\\
+
+\end{tabular}
+
+%Section: Education
+\section{Formación Académica}
+\begin{tabular}{rl}
+\textsc{Mar 2014}
+	& Licenciatura en Matemáticas, \textbf{Pontificia Universidad Católica de Chile},\\
+\textsc{Jul 2016	}
+	& Santiago, Chile\\
+
+	&\\
+	
+\textsc{Ene - Dic} 2012
+	& Medicina, \textbf{Universidad de los Andes}, Santiago, Chile \\
+	&\emph{Incompleto}\\
+	
+	&\\
+		
+\textsc{Ene - Dic} 2011
+	& Licenciatura en Química, \textbf{Universidad de Chile}, Santiago, Chile \\
+	&\emph{Incompleto}\\
+	
+	&\\
+
+\textsc{Dic} 2010
+	& \textbf{Colegio de La Salle La Reina}, Santiago
+\end{tabular}
+
+%Section: Scholarships and additional info
+\section{Becas}
+\begin{tabular}{rl}
+\textsc{2015-2017} 
+	&	Beca Rolando Chuaqui, Facultad de Matemáticas, Pontificia Universidad 	\\
+	&	Católica de Chile	\\
+	&	\\
+	
+\textsc{2015}
+	&	Matrícula de Honor, Pontificia Universidad Católica de Chile	\\
+	&	\\
+	
+\textsc{2012}
+	&	Beca Puntaje Nacional, Universidad de los Andes	\\
+	
+\end{tabular}
+
+%Section: Other experiences
+\section{Experiencia adicional}
+\begin{tabular}{rl}
+\textsc{Ene 2014} 
+	&	Renovación del texto guía de Química, Preuniversitario Gauss, Santiago, Chile 	\\
+	&	\\
+	
+\textsc{Feb 2014} 
+	&	Creación de material de Matemática, específico para terceros medios,	\\
+	&	Preuniversitario Gauss, Santiago, Chile 	\\
+	&	\\
+	
+\textsc{Mar-Dic 2012}
+	&	Profesor voluntario, Corporación Crea+	\\
+	&	\\
+
+\textsc{2010}
+	&	Finalista, Olimpiadas Chilenas de Química	\\
+	&	\\
+	
+\textsc{2009}
+	&	Vicepresidente, Centro de Alumnos, Colegio de la Salle La Reina
+
+\end{tabular}
+
+%Section: Languages
+\section{Idiomas}
+\begin{tabular}{rl}
+ \textsc{Español:}
+ 	&	Lengua nativa	\\
+
+\textsc{Inglés:}
+	&	Fluido	\\
+
+\end{tabular}
+
+% Section: Computer Skills
+\section{Competencias computacionales}
+\begin{tabular}{rl}
+Conocimiento básico:
+	& Excel, Word, PowerPoint, Prezi, Java, Swift, Gurobi 	\\
+
+Conocimiento Intermedio:
+	& {\fb \LaTeX}, Python	\\
+\end{tabular}
+
+
+% Section: Interests and Activities
+\section{Intereses y Actividades}
+Educación, Políticas Públicas, Tecnología, Programación, Lectura, Tenis, Tenis de mesa, Fútbol	\\
+
+
+%\newpage
+%\par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Exam}}&\textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+%Corporate Finance (Valuation)	&25&	6\\
+%Financial Statement Analysis	&28&	6\\
+%Statistics	&27&	6\\
+%Theory of Finance	&26&	6\\
+%Quantitative Methods for Finance	&30&	6\\
+%Econometrics	&24	&6\\
+%Derivatives	&31&	6\\
+%Management of Financial and Insurance Companies	&30&	6\\
+%Business Law	&31&	6\\
+%Investment Banking	&28&	6\\ \\
+%		
+%Behavioral Models for Economics and Finance	&29&	6\\
+%Numerical Methods for Finance	&29&	6\\
+%Advanced Derivatives	&30&	6\\
+%Fixed Income (Advanced Methods)	&30&	6\\ \\
+%		
+%English Language	&30&	4\\
+%French Language	&31&	4\\
+%		
+%Internship	&	&8\\
+%		
+%Final Thesis	&	&20\\
+%		
+%		& Total&120\\\cline{2-3}
+%&\textsc{Gpa}&\textbf{28.61}
+%\end{tabular}
+%\end{center}
+%\bigskip
+%\hrule
+%\bigskip
+%\par{\centering\Large \hypertarget{grds_cleli}{Undergraduate Degree in \textsc{Law and Business Administration}}\par}\large{\centering Grades\par}\normalsize
+%
+%\begin{center}
+%
+%\tablefirsthead{%
+%  \multicolumn{1}{c}{\textsc{Esame (\textsc{ita})}}&\multicolumn{1}{c}{\textsc{Exam (\textsc{eng})}}&\textsc{Grade}&\textsc{Credit Hrs}\\ \hline}
+%\tablehead{%
+%\multicolumn{1}{c}{\textsc{Esame (\textsc{ita})}}&\multicolumn{1}{c}{\textsc{Exam (\textsc{eng})}}&\textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+%}
+%\tabletail{%
+%}
+%\tablelasttail{}	
+%
+% \begin{supertabular}{p{4.9cm} p{4.9cm} c c}
+%Economia aziendale&Theory and principles of management& 28 & 8\\
+%Istituzioni di diritto privato&Principles of private law&30&8\\
+% Istituzioni di diritto pubblico 
+%&
+% Principles of public law 
+%& 30&
+% 6 
+%\\
+%Matematica generale 
+%& Mathematics 
+%&31&8\\
+% Contabilit\`a e Bilancio 
+%& Accounting and Financial statements 
+%& 31 & 8\\
+% Diritto del lavoro 
+%&
+% Labour law 
+%& 30&
+%4 
+%\\
+% Informatica & Computer skills &29& 4 
+%\\
+% Economia e gestione delle imprese & Corporate management &31&6 
+%\\
+% Microeconomia & Microeconomics &30&8 
+%\\
+% Contabilit\`a e bilancio 2 & Accounting and financial statements 2 
+%&29&8 \\
+% Diritto commerciale & Company and business law &30&8 
+%\\
+% Macroeconomia & Macroeconomics &29&8 
+%\\
+% Statistica & Statistics &30&6\\
+% Diritto delle procedure concorsuali & Insolvency law &31&4 
+%\\
+% Finanza aziendale 
+%& Corporate finance 
+%&31 &8 \\
+% Matematica finanziaria & Financial mathematics &31&4 
+%\\
+% Programmazione e controllo 
+%& Management accounting &31&8 
+%\\
+%Lingua Inglese \textsc{c1}& English Language \textsc{c1}& 25&6\\ 
+%Diritto tributario & Tax law &30&6 
+%\\
+%Organizzazione e sistemi informativi aziendali &Management information systems &28&6 
+%\\
+% Strategia e politica aziendale* 
+%& Business strategy* & 29& 6 
+%\\
+%Derivati*&Derivatives*&30&6\\
+%Opzionale all'estero* & Corporate Financial Strategy* &30&6\\
+%Lingua Francese \textsc{b1} & French Language \textsc{b1}&31&6\\
+%Economia dei mercati e degli intermediari finanziari* 
+%&Financial markets and institutions* &30&6 
+%\\
+%Revisione aziendale 
+%&Financial auditing &31&6 
+%\\
+%Scienza delle finanze &Public economics &30&6 
+%\\
+% Lavoro finale& Final report&&6\\
+%& & Total&180\\\cline{3-4}
+%& &\textsc{Gpa}&\textbf{29.85}\\ \\ \multicolumn{4}{l}{\footnotesize A star (*) indicates that the course was taken at the \textbf{University of Southern California}, Los Angeles, \textsc{usa}}
+% \end{supertabular}
+%\end{center}
+%\bigskip
+%\hrule
+%\bigskip
+%\par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering Grades\par}\normalsize
+%
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Exam}}&\textsc{Grade}&\textsc{Grade Points}\\ \hline
+%Corporate Financial Strategy	&A&	4\\
+%Derivatives	&A&	4\\
+%Money, Credit, and Banking	&A&	4\\
+%Business Strategy & A-& 3.5\\
+%& &\\\cline{2-3}
+% &\textsc{Gpa}&\textbf{3.875}
+%\end{tabular}
+%\end{center}
+%%\newpage
+%%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
+%
+%%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+
+\end{document}
