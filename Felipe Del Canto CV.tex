@@ -3,20 +3,76 @@
 \documentclass[a4paper,10pt]{article}
 
 %A Few Useful Packages
+%\usepackage{array}
+\usepackage{etoolbox}
 \usepackage{marvosym}
-\usepackage{fontspec} 					%for loading fonts
-\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\usepackage{fontspec}
+\usepackage{xunicode,xltxtra,url,parskip} 
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[big]{layaureo} 				%better formatting of the A4 page
-\usepackage{supertabular} 				%for Grades
-\usepackage{titlesec}					%custom \section
+\usepackage[big]{layaureo}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{polyglossia}
+\setdefaultlanguage{spanish}
 \usepackage{datetime}
 
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%Spanish month names
+\newcommand\Monthname[1][EMPTY]{%
+  \ifnum1=#1Enero\else
+  \ifnum2=#1Febrero\else
+  \ifnum3=#1Marzo\else
+  \ifnum4=#1Abril\else
+  \ifnum5=#1Mayo\else
+  \ifnum6=#1Junio\else
+  \ifnum7=#1Julio\else
+  \ifnum8=#1Agosto\else
+  \ifnum9=#1Septiembre\else
+  \ifnum10=#1Octubre\else
+  \ifnum11=#1Noviembre\else
+  \ifnum12=#1Diciembre\else
+  \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
+}
+
+% Tab command
+\newcommand{\tablength}{}
+\newcommand{\setTabParams}[1]{\renewcommand\tablength{}\forcsvlist{\listadd\tablength}{#1}}
+
+\newcommand{\setCols}[1]{			%
+	\ifnum0=\i						%
+		\ifdim0cm=#1				%
+			\def \firstCol {r}		%
+		\else						%
+			\def \firstCol {p{#1}}		%
+		\fi						%
+	\else \ifnum1=\i				%
+		\ifdim0cm=#1				%
+			\def \secondCol {l}		%
+		\else						%
+			\def \secondCol{p{#1}}	%
+		\fi						%
+	\else \ifnum2=\i				%
+		\ifnum0=#1				%
+			\def \sep {}			%
+		\else						%
+			\def \sep {|}			%
+		\fi						%
+	\fi \fi \fi						%
+	\advance\i by1					%
+}
+
+\newcommand{\tab}[1]{					%
+	\newcount\i						%
+	\forlistloop{\setCols}{\tablength}		%
+	\begin{tabular}{\firstCol \sep \secondCol}	%
+		#1							%
+	\end{tabular} \\						%
+}
 
 %FONTS
 \defaultfontfeatures{Mapping=tex-text} 
@@ -33,9 +89,6 @@ ItalicFont = Fontin-Italic.otf
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{7pt}
 
-%Italian hyphenation for the word: ''corporations''
-\hyphenation{im-pre-se}
-
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
 
@@ -46,102 +99,213 @@ ItalicFont = Fontin-Italic.otf
 %--------------------TITLE-------------
 \par{\centering
 		{{\Huge Felipe \textsc{Del Canto}}	\\
-		 {\large \monthname, \the\year }
+		 {\large {\Monthname[\the\month]} de \the\year }
 	}\par}
 
 %--------------------SECTIONS-----------------------------------
 %Section: Personal Data
-\section{Personal Information}
+\section{Información personal}
+\setTabParams{0cm,0cm,0}
 
-\begin{tabular}{rl}
-    \textsc{Place and date of birth:}	&	Santiago, Chile  | August 9, 1992 \\
-    \textsc{Address:}   			&	Lynch Norte 388 Casa E, La Reina, Santiago, Chile \\
-    \textsc{Phone:}	   			&	+56 9 6699 9859\\
-    \textsc{email:}     				&	\href{mailto:felipe.delcanto@icloud.com}{felipe.delcanto@icloud.com}
-\end{tabular}
+\tab{
+    \textsc{Lugar y fecha de nacimiento:}	&	Santiago, Chile  | 9 de Agosto de 1992 						\\
+    \textsc{Dirección:}   				&	Lynch Norte 388 Casa E, La Reina, Santiago, Chile 				\\
+    \textsc{Teléfono:}	   				&	+56 9 6699 9859 										\\
+    \textsc{email:}     					&	\href{mailto:felipe.delcanto@icloud.com}{felipe.delcanto@icloud.com},
+     									\href{mailto:fndelcanto@uc.cl}{fndelcanto@uc.cl}
+}
 
 %Section: Education
-\section{Education}
-\begin{tabular}{rl}
-\emph{Present}
-	& Master of Economics, \textbf{Pontifical Catholical University of Chile (PUC-Chile)},\\
-	& Santiago, Chile\\
-	&	\\
-	
+\section{Educación}
+\setTabParams{0cm,0cm,0}
+
+\tab{
+\textsc{2019}
+	& Magíster en Economía, \textbf{Pontificia Universidad Católica de Chile (PUC-Chile)},			\\
+	& Santiago, Chile															\\
+	& \emph{Aggregate problems require aggregate solutions? When heterogeneity is expendable}	\\
+}
+
+\tab{	
 \textsc{2017}
-	& B.S. Mathematics, \textbf{Pontifical Catholical University of Chile (PUC-Chile)},\\
-	& Santiago, Chile\\
-	
-\end{tabular}
+	& Licenciatura en Matemática, \textbf{Pontificia Universidad Católica de Chile (PUC-Chile)},\\
+	& Santiago, Chile\\	
+}
+
+%Section: Docencia
+\section{Experiencia Docente}
+\setTabParams{0cm,12cm,1}
+
+\tab{
+\textsc{Ago - Dic}	
+		&	Ayudante, Microeconomía II (EAE211B), PUC-Chile \\
+\textsc{2019}
+		&	\emph{Docencia y corrección}	\\
+		&	\footnotesize{Curso para estudiantes de Ingeniería Comercial. Profesor: Felipe Zurita.}	\\
+}
+
+\tab{
+\textsc{Ago - Dic}	
+	&	Ayudante, Economía Matemática (EAE319B), PUC-Chile\\
+\textsc{2018}
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso para estudiantes de Magister en Economía e Ingeniería Comercial, mención Economía. Profesor: Jaime Casassus.}	\\
+}
+
+\tab{	
+\textsc{Ago - Dic}
+ 		&	Ayudante, Cálculo III (MAT1136), PUC-Chile \\
+\textsc{2017}
+		&	\emph{Docencia y corrección}	\\
+		&	\footnotesize{Curso para estudiantes de Licenciatura en Matemáticas. Profesor: Martin Chuaqui.}	\\
+}
+
+\tab{	
+\textsc{Ago - Dic}
+ 	&	Ayudante, Introducción a la Economía (EAE105A), PUC-Chile \\
+\textsc{2017}
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso para estudiantes de Geografía. Profesor: Pinjas Albagli.}	\\
+}
+
+\tab{
+\textsc{Mar - Jul}
+ 	&	Ayudante, Álgebra Lineal (MAT1226), PUC-Chile \\
+\textsc{2017}
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso para estudiantes de Licenciatura en Matemáticas. Profesor: Jan Kiwi.}	\\
+}
+
+\tab{
+\textsc{Ago - Dic}
+ 	&	Ayudante, Álgebra Lineal (MAT1226), PUC-Chile \\
+\textsc{2016}
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso para estudiantes de Licenciatura en Matemáticas. Profesor: Alejandro Ramirez.}	\\
+}
+
+\tab{
+\textsc{Mar - Jul}
+ 	&	Ayudante, Introducción al Cálculo (MAT1106), PUC-Chile. \\
+\textsc{2016}
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso para estudiantes de Licenciatura en Matemáticas. Profesor: Duvan Henao.}	\\
+}
+
+\tab{
+\textsc{Ago - Dic}
+ 	&	Ayudante, Cálculo I (MAT1506), PUC-Chile \\
+\textsc{2015}
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso para estudiantes de Agronomía. Profesor: Álvaro Cofré.}	\\
+}
+
+\tab{
+\textsc{Ago - Dic}
+ 	&	Ayudante, Cálculo I (MAT1610), PUC-Chile \\
+\textsc{2015}
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso para estudiantes de Ingeniería. Profesor: Luis Dissett.}	\\
+}
+
+\tab{
+\textsc{Mar - Jul}
+ 	&	Ayudante, Introducción al Cálculo (MAT1600), PUC-Chile \\
+\textsc{2015}
+	&	\emph{Docencia y corrección}	\\
+	&	\footnotesize{Curso para estudiantes de College de Ciencias Naturales y Matemáticas. Profesor: Mario Ponce.}	\\
+}
+
+\tab{
+\textsc{2014 - 2015}
+ 	&	Jefe de Departamento de Matemática, Preuniversitario Gauss \\
+	&	\footnotesize{Encargado de la planificación de los cursos de Matemáticas del Preuniversitario, de las jornadas extra programáticas del área, de la calidad y renovación del material didáctico utilizado y del desempeño de los profesores.}	\\
+}
+
+\tab{
+\textsc{2013 - 2015}
+ 	&	Profesor, Preuniversitario Gauss, Santiago, Chile \\
+	&	\emph{Profesor de Matemática y Química}	\\
+}
 
 %Section: Work History
-\section{Work History}
-\begin{tabular}{r|p{11cm}}
+\section{Experiencia Laboral}
+\setTabParams{0cm,11cm,1}
+
+\tab{
 \textsc{2017 - 2018}
  	&	\textbf{FONDECYT 1170178. Investment Strategies And Risk-Control Methods For Pension Funds: An Optimization-Based Approach.}	\\
-	&	Research Assistant \\
-\end{tabular}
+	&	Asistente de investigación \\
+}
 
-%Section: Ongoing Work
-\section{Ongoing Work}
-\begin{tabular}{r|p{11cm}}
-\emph{Submitted}
+%Sección: Publicaciones
+\section{Publicaciones}
+\setTabParams{0cm,11cm,1}
+
+\tab{
+\emph{Enviado}
  	&	\textbf{The effect of regularization in portfolio selection problems} \\
 \textsc{2019}
 	&	\footnotesize{B.K. Pagnoncelli, F. Del Canto, A. Cifuentes}	\\
-\end{tabular}
+}
 	
-%Section: Presentations
-\section{Presentations}
-\begin{tabular}{r|p{11cm}}
-\textsc{October}
+%Section: Presentaciones
+\section{Presentaciones}
+\setTabParams{0cm,11cm,1}
+
+\tab{
+\textsc{Octubre}
  	&	\textbf{3rd Eastern Conference on Mathematical Finance, Illinois Institute of}	\\
 \textsc{2018}
 	&	\textbf{Technology, Illinois, United States} \\
 	&	The effect of regularization in portfolio selection problems	\\
-	&	\emph{Poster presentation}
-\end{tabular}
+	&	\emph{Presentación de póster}
+}
 
 %Section: Scholarships and additional info
-\section{Awards}
-\begin{tabular}{rl}
+\section{Becas}
+\setTabParams{0cm,0cm,0}
+
+\tab{
 \textsc{2018-2019} 
-	&	Master's Scholarship in Chile, Formation of Advanced Human Capital Program	\\
+	&	Beca de Magíster Nacional, Programa Formación de Capital Humano Avanzado	\\
 	&	CONICYT, Chile	\\
 	&	\\
 
 \textsc{2015-2017} 
-	&	Rolando Chuaqui Scholarship, Math Faculty	\\
+	&	Beca Rolando Chuaqui, Facultad de Matemáticas	\\
 	&	PUC-Chile	\\
 	&	\\
-	
+
 \textsc{2015}
-	&	Matrícula de Honor (Scholarship)	\\
+	&	Matrícula de Honor (Beca)	\\
 	&	PUC-Chile	\\
 	&	\\
-	
-\end{tabular}
+}
 
 %Section: Languages
-\section{Languages}
-\begin{tabular}{rl}
- \textsc{Spanish:}
- 	&	Native Language	\\
+\section{Idiomas}
+\setTabParams{0cm,0cm,0}
 
-\textsc{English:}
-	&	Fluent	\\
+\tab{
+ \textsc{Español:}
+ 	&	Nativo	\\
+\textsc{Inglés:}
+	&	Fluido	\\
+}
 
-\end{tabular}
 
 % Section: Computer Skills
-\section{Computational Skills}
-\begin{tabular}{rl}
-Basic knowledge:
+\section{Competencias computacionales}
+\setTabParams{0cm,0cm,0}
+
+\tab{
+Conocimiento básico:
 	& Excel, Word, PowerPoint, Prezi, Java, Swift, Unity 	\\
 
-Intermediate knowledge:
+Conocimiento avanzado:
 	& {\fb \LaTeX}, Python, Stata, MATLAB, Gurobi, C\#	\\
-\end{tabular}
+}
 
 
 %\newpage
