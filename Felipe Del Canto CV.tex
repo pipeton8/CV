@@ -3,20 +3,56 @@
 \documentclass[a4paper,10pt]{article}
 
 %A Few Useful Packages
+\usepackage{etoolbox}
 \usepackage{marvosym}
-\usepackage{fontspec} 					%for loading fonts
-\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\usepackage{fontspec}
+\usepackage{xunicode,xltxtra,url,parskip}
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[big]{layaureo} 				%better formatting of the A4 page
-\usepackage{supertabular} 				%for Grades
-\usepackage{titlesec}					%custom \section
+\usepackage[big]{layaureo}
+\usepackage{supertabular}
+\usepackage{titlesec}	
 \usepackage{datetime}
 
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% Tab command
+\newcommand{\tablength}{}
+\newcommand{\setTabParams}[1]{\renewcommand\tablength{}\forcsvlist{\listadd\tablength}{#1}}
+
+\newcommand{\setCols}[1]{			%
+	\ifnum0=\i						%
+		\ifdim0cm=#1				%
+			\def \firstCol {r}		%
+		\else						%
+			\def \firstCol {p{#1}}		%
+		\fi						%
+	\else \ifnum1=\i				%
+		\ifdim0cm=#1				%
+			\def \secondCol {l}		%
+		\else						%
+			\def \secondCol{p{#1}}	%
+		\fi						%
+	\else \ifnum2=\i				%
+		\ifnum0=#1				%
+			\def \sep {}			%
+		\else						%
+			\def \sep {|}			%
+		\fi						%
+	\fi \fi \fi						%
+	\advance\i by1					%
+}
+
+\newcommand{\tab}[1]{					%
+	\newcount\i						%
+	\forlistloop{\setCols}{\tablength}		%
+	\begin{tabular}{\firstCol \sep \secondCol}	%
+		#1							%
+	\end{tabular} \\						%
+}
 
 %FONTS
 \defaultfontfeatures{Mapping=tex-text} 
@@ -32,9 +68,6 @@ ItalicFont = Fontin-Italic.otf
 
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{7pt}
-
-%Italian hyphenation for the word: ''corporations''
-\hyphenation{im-pre-se}
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
@@ -52,64 +85,79 @@ ItalicFont = Fontin-Italic.otf
 %--------------------SECTIONS-----------------------------------
 %Section: Personal Data
 \section{Personal Information}
+\setTabParams{0cm,0cm,0}
 
-\begin{tabular}{rl}
-    \textsc{Place and date of birth:}	&	Santiago, Chile  | August 9, 1992 \\
-    \textsc{Address:}   			&	Lynch Norte 388 Casa E, La Reina, Santiago, Chile \\
-    \textsc{Phone:}	   			&	+56 9 6699 9859\\
-    \textsc{email:}     				&	\href{mailto:felipe.delcanto@icloud.com}{felipe.delcanto@icloud.com}
-\end{tabular}
+\tab{
+    \textsc{Place and date of birth:}	&	Santiago, Chile  | August 9, 1992								\\
+    \textsc{Address:}   			&	Lynch Norte 388 Casa E, La Reina, Santiago, Chile					\\
+    \textsc{Phone:}	   			&	+56 9 6699 9859											\\
+    \textsc{email:}     				&	\href{mailto:felipe.delcanto@icloud.com}{felipe.delcanto@icloud.com},
+    								\href{mailto:fndelcanto@uc.cl}{fndelcanto@uc.cl}
+}
 
 %Section: Education
 \section{Education}
-\begin{tabular}{rl}
-\emph{Present}
-	& Master of Economics, \textbf{Pontifical Catholical University of Chile (PUC-Chile)},\\
-	& Santiago, Chile\\
-	&	\\
-	
+\setTabParams{0cm,0cm,0}
+
+\tab{
+\textsc{2019}
+	& Master of Economics, \textbf{Pontifical Catholical University of Chile (PUC-Chile)},		\\
+	& Santiago, Chile														\\
+	& \emph{Aggregate models need aggregate solutions? When heterogeneity is expendable}	\\
+}
+
+\tab{
 \textsc{2017}
-	& B.S. Mathematics, \textbf{Pontifical Catholical University of Chile (PUC-Chile)},\\
+	& B.S. Mathematics, \textbf{Pontifical Catholical University of Chile (PUC-Chile)},			\\
 	& Santiago, Chile\\
-	
-\end{tabular}
+}
 
 %Section: Work History
 \section{Work History}
-\begin{tabular}{r|p{11cm}}
+\setTabParams{0cm,11cm,1}
+
+\tab{
 \textsc{2017 - 2018}
  	&	\textbf{FONDECYT 1170178. Investment Strategies And Risk-Control Methods For Pension Funds: An Optimization-Based Approach.}	\\
 	&	Research Assistant \\
-\end{tabular}
+}
 
 %Section: Ongoing Work
 \section{Ongoing Work}
-\begin{tabular}{r|p{11cm}}
+\setTabParams{0cm,11cm,1}
+
+\tab{
 \emph{Submitted}
  	&	\textbf{The effect of regularization in portfolio selection problems} \\
 \textsc{2019}
 	&	\footnotesize{B.K. Pagnoncelli, F. Del Canto, A. Cifuentes}	\\
-\end{tabular}
+}
 	
 %Section: Presentations
 \section{Presentations}
-\begin{tabular}{r|p{11cm}}
+\setTabParams{0cm,11cm,1}
+
+\tab{
 \textsc{October}
  	&	\textbf{3rd Eastern Conference on Mathematical Finance, Illinois Institute of}	\\
 \textsc{2018}
 	&	\textbf{Technology, Illinois, United States} \\
 	&	The effect of regularization in portfolio selection problems	\\
 	&	\emph{Poster presentation}
-\end{tabular}
+}
 
 %Section: Scholarships and additional info
 \section{Awards}
-\begin{tabular}{rl}
+\setTabParams{0cm,11cm,0}
+
+\tab{
 \textsc{2018-2019} 
 	&	Master's Scholarship in Chile, Formation of Advanced Human Capital Program	\\
 	&	CONICYT, Chile	\\
 	&	\\
+}
 
+\tab{
 \textsc{2015-2017} 
 	&	Rolando Chuaqui Scholarship, Math Faculty	\\
 	&	PUC-Chile	\\
@@ -119,29 +167,32 @@ ItalicFont = Fontin-Italic.otf
 	&	Matrícula de Honor (Scholarship)	\\
 	&	PUC-Chile	\\
 	&	\\
-	
-\end{tabular}
+}
 
 %Section: Languages
 \section{Languages}
-\begin{tabular}{rl}
- \textsc{Spanish:}
- 	&	Native Language	\\
+\setTabParams{0cm,0cm,0}
+
+\tab{
+\textsc{Spanish:}
+	&	Native Language	\\
 
 \textsc{English:}
 	&	Fluent	\\
+}
 
-\end{tabular}
 
 % Section: Computer Skills
 \section{Computational Skills}
-\begin{tabular}{rl}
+\setTabParams{0cm,0cm,0}
+
+\tab{
 Basic knowledge:
 	& Excel, Word, PowerPoint, Prezi, Java, Swift, Unity 	\\
 
 Intermediate knowledge:
 	& {\fb \LaTeX}, Python, Stata, MATLAB, Gurobi, C\#	\\
-\end{tabular}
+}
 
 
 %\newpage
