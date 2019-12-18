@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.5.22)  11 DEC 2019 09:25
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.5.22)  16 DEC 2019 10:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -919,6 +919,9 @@ LaTeX Info: Redefining \nameref on input line 93.
 \openout3 = `"Felipe Del Canto CV.out"'.
 
 
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
@@ -1085,12 +1088,12 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 448.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 448.
  ) 
 Here is how much of TeX's memory you used:
- 23641 strings out of 493591
- 416932 string characters out of 6143546
- 466616 words of memory out of 5000000
- 26832 multiletter control sequences out of 15000+600000
+ 23643 strings out of 493591
+ 416978 string characters out of 6143546
+ 466604 words of memory out of 5000000
+ 26834 multiletter control sequences out of 15000+600000
  4184 words of font info for 38 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 48i,9n,61p,10434b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,9n,61p,10402b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Felipe Del Canto CV.pdf (3 pages).
