@@ -1,8 +1,9 @@
 % Remember to Typeset with XeLaTeX
 
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper, margins=2cm,10pt]{article}
 
 %A Few Useful Packages
+\usepackage[margin=2cm]{geometry}
 \usepackage{etoolbox}
 \usepackage{marvosym}
 \usepackage{fontspec}
@@ -54,6 +55,9 @@
 	\end{tabular} \\						%
 }
 
+%: Margins
+\geometry{hoffset=-0.25in}
+
 %FONTS
 \defaultfontfeatures{Mapping=tex-text} 
 %\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
@@ -78,21 +82,23 @@ ItalicFont = Fontin-Italic.otf
 
 %--------------------TITLE-------------
 \par{\centering
-		{{\Huge Felipe \textsc{Del Canto}}	\\
-		 {\large \monthname, \the\year }
+		{{\Huge Felipe \textsc{Del Canto}}	\\[0.5ex]
+		 {\large Last Updated: \monthname, \the\year }
 	}\par}
 
 %--------------------SECTIONS-----------------------------------
-%Section: Personal Data
+%Section: Personal Information
 \section{Personal Information}
 \setTabParams{0cm,0cm,0}
 
 \tab{
-    \textsc{Place and date of birth:}	&	Santiago, Chile  | August 9, 1992								\\
-    \textsc{Address:}   			&	Lynch Norte 388 Casa E, La Reina, Santiago, Chile					\\
-    \textsc{Phone:}	   			&	+56 9 6699 9859											\\
-    \textsc{email:}     				&	\href{mailto:felipe.delcanto@icloud.com}{felipe.delcanto@icloud.com},
-    								\href{mailto:fndelcanto@uc.cl}{fndelcanto@uc.cl}
+    \textsc{Place and date of birth:}	&	Santiago, Chile\,  |\, August 9, 1992								\\[0.2ex]
+    \textsc{Address:}   			&	Lynch Norte 388 Casa E, La Reina, Santiago, Chile					\\[0.2ex]
+    \textsc{Citizenship:}			&	Chilean													\\[0.2ex]
+    \textsc{Marital Status:}			&	Single													\\[0.2ex]
+    \textsc{Phone:}	   			&	+(56 9) 6699 9859											\\[0.2ex]
+    \textsc{email:}     				&	\href{mailto:fndelcanto@uc.cl}{fndelcanto@uc.cl},
+    								\href{mailto:felipe.delcanto@icloud.com}{felipe.delcanto@icloud.com}
 }
 
 %Section: Education
@@ -101,72 +107,149 @@ ItalicFont = Fontin-Italic.otf
 
 \tab{
 \textsc{2019}
-	& Master of Economics, \textbf{Pontifical Catholical University of Chile (PUC-Chile)},		\\
-	& Santiago, Chile														\\
-	& \emph{Aggregate models need aggregate solutions? When heterogeneity is expendable}	\\
+	&	\textbf{M.A. in Economics}, \href{https://economia.uc.cl/programas-academicos/magister-en-economia/}{Pontificia Universidad Católica de Chile}, Santiago, Chile	\\[0.2ex]
+	&	\emph{\quad Thesis: \href{https://economia.uc.cl/wp-content/uploads/2020/01/tesis-DelCanto-2019.pdf}{Aggregate models require aggregate solutions? When heterogeneity is expendable}}	\\[0.2ex]
+	&	\emph{\quad Advisors: Eugenio Bobenrieth and Felipe Zurita}	\\[0.2ex]
+	&	\emph{\quad GPA: 6.6/7.0, Ranking: 1/28}
 }
 
 \tab{
 \textsc{2017}
-	& B.S. Mathematics, \textbf{Pontifical Catholical University of Chile (PUC-Chile)},			\\
-	& Santiago, Chile\\
+	& 	\textbf{B.S. in Mathematics}, \href{http://www.mat.uc.cl/?lang=en}{Pontificia Universidad Católica de Chile}, Santiago, Chile\\
+	&	\emph{\quad GPA: 6.4/7.0, Ranking: 2/20}
 }
 
-%Section: Work History
-\section{Work History}
+%Section: Publications
+\section{Publications}
+\setTabParams{0cm,11cm,1}
+
+\tab{
+\textsc{Forthcoming}	&	\textbf{The effect of regularization in portfolio selection problems} \\[0.2ex]
+\textsc{2020}		&	\textit{TOP} (joint with Bernardo Pagnoncelli and Arturo Cifuentes)
+}
+
+%Section: Academic Positions
+\section{Academic Positions}
+\setTabParams{0cm,11cm,1}
+
+\tab{
+\textsc{2020 - present}
+ 	&	\textbf{Adjunct Instructor}	\\[0.2ex]
+	&	Department of Economics, Pontificia Universidad Católica de Chile
+}
+
+%Section: Research Projects
+\section{Research Projects}
 \setTabParams{0cm,11cm,1}
 
 \tab{
 \textsc{2017 - 2018}
- 	&	\textbf{FONDECYT 1170178. Investment Strategies And Risk-Control Methods For Pension Funds: An Optimization-Based Approach.}	\\
-	&	Research Assistant \\
+ 	&	\textbf{FONDECYT 1170178. Investment Strategies And Risk-Control Methods For Pension Funds: An Optimization-Based Approach.} \\[0.2ex]
+	&	\emph{Research Assistant of Bernardo Pagnoncelli and Arturo Cifuentes}
 }
-
 %Section: Ongoing Work
-\section{Ongoing Work}
+%\section{Ongoing Work}
+%\setTabParams{0cm,11cm,1}
+%
+%\tab{
+%\emph{Submitted}
+% 	&	\textbf{The effect of regularization in portfolio selection problems} \\
+%\textsc{2019}
+%	&	\footnotesize{B.K. Pagnoncelli, F. Del Canto, A. Cifuentes}	\\
+%}
+
+%Section: Teaching
+\section{Teaching}
 \setTabParams{0cm,11cm,1}
 
 \tab{
-\emph{Submitted}
- 	&	\textbf{The effect of regularization in portfolio selection problems} \\
-\textsc{2019}
-	&	\footnotesize{B.K. Pagnoncelli, F. Del Canto, A. Cifuentes}	\\
+\textsc{2020} 
+	&	\textbf{Python course}	\\[0.2ex]
+	&	Graduate (M.A. and Ph.D.), Pontificia Universidad Católica de Chile
 }
-	
+
+\tab{
+\textsc{2020} 
+	&	\textbf{Math applications for Economics and Business}	\\[0.2ex]
+	&	Undergraduate, Pontificia Universidad Católica de Chile
+}
+
+\tab{
+\textsc{2020} 
+	&	\textbf{Principles of Economics}				\\[0.2ex]
+	&	Undergraduate, Pontificia Universidad Católica de Chile
+}
+
+%Section: Teaching assistance
+\section{Teaching assistance}
+\setTabParams{14.5ex,11cm,1}
+
+\tab{
+\raggedleft{\textsc{Graduate}} 
+	&	\textbf{Mathematical Economics} (\emph{Prof. Jaime Casassus})
+}
+
+\tab{
+\textsc{Undergraduate} 
+	&	\textbf{Advanced Microeconomics} (\emph{Prof. Felipe Zurita})							\\[0.2ex]
+	&	\textbf{Calculus (B.S. in Agronomy)} (\emph{Prof. Álvaro Cofré})							\\[0.2ex]
+	&	\textbf{Calculus (B.S. in Engineering)} (\emph{Prof. Luis Dissett})						\\[0.2ex]
+	&	\textbf{Introduction to Calculus (B.S. in Science and Math)} (\emph{Prof. Mario Ponce})			\\[0.2ex]
+	&	\textbf{Introduction to Calculus (B.S. in Mathematics)} (\emph{Prof. Duvan Henao})			\\[0.2ex]
+	&	\textbf{Linear Algebra ($\mathbf{\times}$2)} (\emph{Profs. Jan Kiwi and Alejandro Ramirez})	\\[0.2ex]
+	&	\textbf{Measure Theory} (\emph{Prof. Alejandro Ramirez})								\\[0.2ex]
+	&	\textbf{Multivariable Calculus} (\emph{Prof. Martin Chuaqui})							\\[0.2ex]
+	&	\textbf{Principles of Economics} (\emph{Prof. Pinjas Albagli})							\\[0.2ex]
+}
+
+
 %Section: Presentations
 \section{Presentations}
 \setTabParams{0cm,11cm,1}
 
 \tab{
 \textsc{October}
- 	&	\textbf{3rd Eastern Conference on Mathematical Finance, Illinois Institute of}	\\
+ 	&	\textbf{3rd Eastern Conference on Mathematical Finance}			\\[0.2ex]
 \textsc{2018}
-	&	\textbf{Technology, Illinois, United States} \\
-	&	The effect of regularization in portfolio selection problems	\\
+	&	Illinois Institute of Technology, Illinois, United States 				\\[0.2ex]
+	&	\emph{The effect of regularization in portfolio selection problems}	\\[0.2ex]
 	&	\emph{Poster presentation}
 }
 
 %Section: Scholarships and additional info
-\section{Awards}
+\section{Awards and Honors}
 \setTabParams{0cm,11cm,0}
 
 \tab{
-\textsc{2018-2019} 
-	&	Master's Scholarship in Chile, Formation of Advanced Human Capital Program	\\
-	&	CONICYT, Chile	\\
+\textsc{2019}
+	&	\textbf{Thesis graded with Maximum Distinction}				\\[0.2ex]
+	&	M.A. in Economics, Pontificia Universidad Católica de Chile		\\
 	&	\\
-}
 
-\tab{
-\textsc{2015-2017} 
-	&	Rolando Chuaqui Scholarship, Math Faculty	\\
-	&	PUC-Chile	\\
+\textsc{2019}
+	&	\textbf{Degree granted with Maximum Distinction}			\\[0.2ex]
+	&	M.A. in Economics, Pontificia Universidad Católica de Chile		\\
+	&	\\
+
+\textsc{2018 - 2019} 
+	&	\textbf{Master's Scholarship in Chile}						\\[0.2ex]
+	&	Formation of Advanced Human Capital Program				\\[0.2ex]
+	&	\href{https://www.anid.cl}{ANID} (formerly CONICYT), Chile		\\
+	&	\\
+
+\textsc{2015 - 2017} 
+	&	\textbf{Rolando Chuaqui Scholarship}						\\[0.2ex]
+	&	Math Faculty, Pontificia Universidad Católica de Chile			\\
 	&	\\
 	
 \textsc{2015}
-	&	Matrícula de Honor (Scholarship)	\\
-	&	PUC-Chile	\\
+	&	\textbf{Matrícula de Honor (Academic Excellence Scholarship)}	\\[0.2ex]
+	&	Pontificia Universidad Católica de Chile						\\
 	&	\\
+
+\textsc{2010, 2013}
+	&	\textbf{Highest National Score, Mathematics}				\\[0.2ex]
+	&	 University Entrance Exam (PSU)							\\	
 }
 
 %Section: Languages
@@ -181,155 +264,51 @@ ItalicFont = Fontin-Italic.otf
 	&	Fluent	\\
 }
 
-
-% Section: Computer Skills
+% Section: Computational Skills
 \section{Computational Skills}
 \setTabParams{0cm,0cm,0}
 
 \tab{
-Basic knowledge:
-	& Excel, Word, PowerPoint, Prezi, Java, Swift, Unity 	\\
+\textsc{Basic knowledge:}
+	&	Office, R, Java, Swift, Unity 	\\[0.5ex]
 
-Intermediate knowledge:
-	& {\fb \LaTeX}, Python, Stata, MATLAB, Gurobi, C\#	\\
+\textsc{Advanced knowledge:}
+	&	{\fb \LaTeX}, Python, Stata, MATLAB, Gurobi, C\#	\\
 }
 
+% Section: References
+\section{References}
+\setTabParams{0cm,0cm,0}
 
-%\newpage
-%\par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
-%\begin{center}
-%\begin{tabular}{lcc}
-%\multicolumn{1}{c}{\textsc{Exam}}&\textsc{Grade}&\textsc{Credit Hrs}\\ \hline
-%Corporate Finance (Valuation)	&25&	6\\
-%Financial Statement Analysis	&28&	6\\
-%Statistics	&27&	6\\
-%Theory of Finance	&26&	6\\
-%Quantitative Methods for Finance	&30&	6\\
-%Econometrics	&24	&6\\
-%Derivatives	&31&	6\\
-%Management of Financial and Insurance Companies	&30&	6\\
-%Business Law	&31&	6\\
-%Investment Banking	&28&	6\\ \\
-%		
-%Behavioral Models for Economics and Finance	&29&	6\\
-%Numerical Methods for Finance	&29&	6\\
-%Advanced Derivatives	&30&	6\\
-%Fixed Income (Advanced Methods)	&30&	6\\ \\
-%		
-%English Language	&30&	4\\
-%French Language	&31&	4\\
-%		
-%Internship	&	&8\\
-%		
-%Final Thesis	&	&20\\
-%		
-%		& Total&120\\\cline{2-3}
-%&\textsc{Gpa}&\textbf{28.61}
-%\end{tabular}
-%\end{center}
-%\bigskip
-%\hrule
-%\bigskip
-%\par{\centering\Large \hypertarget{grds_cleli}{Undergraduate Degree in \textsc{Law and Business Administration}}\par}\large{\centering Grades\par}\normalsize
-%
-%\begin{center}
-%
-%\tablefirsthead{%
-%  \multicolumn{1}{c}{\textsc{Esame (\textsc{ita})}}&\multicolumn{1}{c}{\textsc{Exam (\textsc{eng})}}&\textsc{Grade}&\textsc{Credit Hrs}\\ \hline}
-%\tablehead{%
-%\multicolumn{1}{c}{\textsc{Esame (\textsc{ita})}}&\multicolumn{1}{c}{\textsc{Exam (\textsc{eng})}}&\textsc{Grade}&\textsc{Credit Hrs}\\ \hline
-%}
-%\tabletail{%
-%}
-%\tablelasttail{}	
-%
-% \begin{supertabular}{p{4.9cm} p{4.9cm} c c}
-%Economia aziendale&Theory and principles of management& 28 & 8\\
-%Istituzioni di diritto privato&Principles of private law&30&8\\
-% Istituzioni di diritto pubblico 
-%&
-% Principles of public law 
-%& 30&
-% 6 
-%\\
-%Matematica generale 
-%& Mathematics 
-%&31&8\\
-% Contabilit\`a e Bilancio 
-%& Accounting and Financial statements 
-%& 31 & 8\\
-% Diritto del lavoro 
-%&
-% Labour law 
-%& 30&
-%4 
-%\\
-% Informatica & Computer skills &29& 4 
-%\\
-% Economia e gestione delle imprese & Corporate management &31&6 
-%\\
-% Microeconomia & Microeconomics &30&8 
-%\\
-% Contabilit\`a e bilancio 2 & Accounting and financial statements 2 
-%&29&8 \\
-% Diritto commerciale & Company and business law &30&8 
-%\\
-% Macroeconomia & Macroeconomics &29&8 
-%\\
-% Statistica & Statistics &30&6\\
-% Diritto delle procedure concorsuali & Insolvency law &31&4 
-%\\
-% Finanza aziendale 
-%& Corporate finance 
-%&31 &8 \\
-% Matematica finanziaria & Financial mathematics &31&4 
-%\\
-% Programmazione e controllo 
-%& Management accounting &31&8 
-%\\
-%Lingua Inglese \textsc{c1}& English Language \textsc{c1}& 25&6\\ 
-%Diritto tributario & Tax law &30&6 
-%\\
-%Organizzazione e sistemi informativi aziendali &Management information systems &28&6 
-%\\
-% Strategia e politica aziendale* 
-%& Business strategy* & 29& 6 
-%\\
-%Derivati*&Derivatives*&30&6\\
-%Opzionale all'estero* & Corporate Financial Strategy* &30&6\\
-%Lingua Francese \textsc{b1} & French Language \textsc{b1}&31&6\\
-%Economia dei mercati e degli intermediari finanziari* 
-%&Financial markets and institutions* &30&6 
-%\\
-%Revisione aziendale 
-%&Financial auditing &31&6 
-%\\
-%Scienza delle finanze &Public economics &30&6 
-%\\
-% Lavoro finale& Final report&&6\\
-%& & Total&180\\\cline{3-4}
-%& &\textsc{Gpa}&\textbf{29.85}\\ \\ \multicolumn{4}{l}{\footnotesize A star (*) indicates that the course was taken at the \textbf{University of Southern California}, Los Angeles, \textsc{usa}}
-% \end{supertabular}
-%\end{center}
-%\bigskip
-%\hrule
-%\bigskip
-%\par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering Grades\par}\normalsize
-%
-%\begin{center}
-%\begin{tabular}{lcc}
-%\multicolumn{1}{c}{\textsc{Exam}}&\textsc{Grade}&\textsc{Grade Points}\\ \hline
-%Corporate Financial Strategy	&A&	4\\
-%Derivatives	&A&	4\\
-%Money, Credit, and Banking	&A&	4\\
-%Business Strategy & A-& 3.5\\
-%& &\\\cline{2-3}
-% &\textsc{Gpa}&\textbf{3.875}
-%\end{tabular}
-%\end{center}
-%%\newpage
-%%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
-%
-%%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+\tab{
+\textsc{Professor}
+	&	Department of Economics, Pontificia Universidad Católica de Chile		\\[0.2ex]
+\textsc{Jeanne Lafortune}
+	& 	Vicuña Mackenna 486, Macul, Santiago, Chile					\\[0.2ex]
+	&	\href{mailto:jlafortune@uc.cl}{jlafortune@uc.cl}					\\[0.2ex]
+	&	\\
+
+\textsc{Professor}
+	&	Department of Economics, Pontificia Universidad Católica de Chile		\\[0.2ex]
+\textsc{Felipe Zurita}
+	& 	Vicuña Mackenna 486, Macul, Santiago, Chile					\\[0.2ex]
+	&	\href{mailto:fzurita@uc.cl}{fzurita@uc.cl}						\\[0.2ex]
+	&	\\
+
+\textsc{Professor}
+	&	School of Business, Universidad Adolfo Ibáñez					\\[0.2ex]
+\textsc{Bernardo Pagnoncelli}
+	& 	Diagonal Las Torres 2640 oficina 533 C, Peñalolen, Santiago, Chile	\\[0.2ex]
+	&	\href{mailto:bernardo.pagnoncelli@uai.cl}{bernardo.pagnoncelli@uai.cl}	\\[0.2ex]
+	&	\\
+
+\textsc{Professor}
+	&	CLAPES, Pontificia Universidad Católica de Chile 					\\[0.2ex]
+\textsc{Arturo Cifuentes}
+	& 	Alameda 440, Floor 13, Santiago, Santiago, Chile					\\[0.2ex]
+	&	\href{mailto:aocusa@gmail.com}{aocusa@gmail.com}				\\[0.2ex]
+	&	\\
+}
+
 
 \end{document}
