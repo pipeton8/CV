@@ -1,26 +1,27 @@
-% Remember to Typeset with XeLaTeX
+\documentclass[a4paper, 10pt]{article}
 
-\documentclass[a4paper, margins=2cm,10pt]{article}
-
-%A Few Useful Packages
+%:Packages
 \usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
 \usepackage{etoolbox}
-\usepackage{marvosym}
-\usepackage{fontspec}
-\usepackage{xunicode,xltxtra,url,parskip}
-\RequirePackage{color,graphicx}
-\usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[big]{layaureo}
-\usepackage{supertabular}
-\usepackage{titlesec}	
-\usepackage{datetime}
+\usepackage{titlesec}
+\usepackage{datetime}	
 
-%Setup hyperref package, and colours for links
+%:Set font
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+
+
+%:Setup hyperref package, and colors for links
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
-% Tab command
+%:Tab command
 \newcommand{\tablength}{}
 \newcommand{\setTabParams}[1]{\renewcommand\tablength{}\forcsvlist{\listadd\tablength}{#1}}
 
@@ -55,49 +56,32 @@
 	\end{tabular} \\						%
 }
 
-%: Margins
-\geometry{hoffset=-0.25in}
-
-%FONTS
-\defaultfontfeatures{Mapping=tex-text} 
-%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
-%%% modified for Karol Kozioł for ShareLaTeX use
-\setmainfont[
-SmallCapsFont = Fontin-SmallCaps.otf,
-BoldFont = Fontin-Bold.otf,
-ItalicFont = Fontin-Italic.otf
-]
-{Fontin.otf}
-%%%
-
+%: Titles
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{7pt}
 
-%--------------------BEGIN DOCUMENT----------------------
+%:--------------------BEGIN DOCUMENT----------------------
 \begin{document}
 
-\pagestyle{empty} % non-numbered pages
+\pagestyle{empty} 
 
-\font\fb=''[cmr10]'' %for use with \LaTeX command
-
-%--------------------TITLE-------------
+% --------------------TITLE-------------
 \par{\centering
 		{{\Huge Felipe \textsc{Del Canto}}	\\[1.5ex]
 		 {\large Last Updated: \monthname, \the\year }
 	}\par}
 
-%--------------------SECTIONS-----------------------------------
-%Section: Personal Information
+%:--------------------SECTIONS-----------------------------------%Section: Personal Information
 \section{Personal Information}
 \setTabParams{0cm,0cm,0}
 
 \tab{
-    \textsc{Place and date of birth:}	&	Santiago, Chile\,  |\, August 9, 1992								\\[0.2ex]
-    \textsc{Address:}   			&	Lynch Norte 388 Casa E, La Reina, Santiago, Chile					\\[0.2ex]
-    \textsc{Citizenship:}			&	Chilean													\\[0.2ex]
-    \textsc{Marital Status:}			&	Single													\\[0.2ex]
-    \textsc{Phone:}	   			&	+(56 9) 6699 9859											\\[0.2ex]
-    \textsc{email:}     				&	\href{mailto:fndelcanto@uc.cl}{fndelcanto@uc.cl},
+    \textsc{Place and date of birth:}	&	Santiago, Chile\,  |\, August 9, 1992							\\[0.2ex]
+    \textsc{Address:}   				&	45 Hayward St. Apt 1642, Cambridge MA, 02142					\\[0.2ex]
+    \textsc{Citizenship:}				&	Chilean															\\[0.2ex]
+    \textsc{Marital Status:}			&	Married															\\[0.2ex]
+    \textsc{Phone:}	   					&	+1 (857) 856 0309												\\[0.2ex]
+    \textsc{email:}     				&	\href{mailto:felipede@mit.edu}{felipede@mit.edu}, \href{mailto:fndelcanto@uc.cl}{fndelcanto@uc.cl},
     								\href{mailto:felipe.delcanto@icloud.com}{felipe.delcanto@icloud.com}
 }
 
@@ -107,7 +91,7 @@ ItalicFont = Fontin-Italic.otf
 
 \tab{
 \textsc{2019}
-	&	\textbf{M.A. in Economics}, \href{https://economia.uc.cl/programas-academicos/magister-en-economia/}{Pontificia Universidad Católica de Chile}, Santiago, Chile											\\[0.2ex]
+	&	\textbf{M.A. in Economics}, \href{https://economia.uc.cl/programas-academicos/magister-en-economia/}{Pontificia Universidad Católica de Chile (PUC-Chile)}, Santiago, Chile											\\[0.2ex]
 	&	\emph{\quad Thesis: \href{https://economia.uc.cl/wp-content/uploads/2020/01/tesis-DelCanto-2019.pdf}{Aggregate models require aggregate solutions? When heterogeneity is expendable}}				\\[0.2ex]
 	&	\emph{\quad Advisors: Eugenio Bobenrieth and Felipe Zurita}	\\[0.2ex]
 	&	\emph{\quad GPA: 6.6/7.0, Ranking: 1/28}
@@ -115,7 +99,7 @@ ItalicFont = Fontin-Italic.otf
 
 \tab{
 \textsc{2017}
-	& 	\textbf{B.S. in Mathematics}, \href{http://www.mat.uc.cl/?lang=en}{Pontificia Universidad Católica de Chile}, Santiago, Chile	\\[0.2ex]
+	& 	\textbf{B.S. in Mathematics}, \href{http://www.mat.uc.cl/?lang=en}{Pontificia Universidad Católica de Chile (PUC-Chile)}, Santiago, Chile	\\[0.2ex]
 	&	\emph{\quad GPA: 6.4/7.0, Ranking: 1/47}
 }
 
@@ -124,7 +108,7 @@ ItalicFont = Fontin-Italic.otf
 \setTabParams{0cm,11cm,1}
 
 \tab{
-\textsc{2020 - present}
+\textsc{2020 - 2021}
  	&	\textbf{Adjunct Instructor}	\\[0.2ex]
 	&	Department of Economics, Pontificia Universidad Católica de Chile
 }
@@ -135,24 +119,12 @@ ItalicFont = Fontin-Italic.otf
 
 \tab{
 \textsc{July}	&	\href{http://links.springernature.com/f/a/UOaM73CHGS-A0wxcwW1Zhw~~/AABE5gA~/RgRg_rc5P0QwaHR0cDovL3d3dy5zcHJpbmdlci5jb20vLS8yL0FYT0xTb2g2NTh5YXNfWm11RW9KVwNzcGNCCgBIuYMdXwAuny5SG2Jlcm5hcmRvLnBhZ25vbmNlbGxpQHVhaS5jbFgEAAAG5w~~}{\textbf{The effect of regularization in portfolio selection problems}} \\[0.2ex]
-\textsc{2020}	&	\textit{TOP} (joint with Bernardo Pagnoncelli and Arturo Cifuentes)
+\textsc{2020}	&	\textit{TOP} (with Bernardo Pagnoncelli and Arturo Cifuentes)
 }
 
-%Section: Ongoing Work
-%\section{Ongoing Work}
-%\setTabParams{0cm,11cm,1}
-%
-%\tab{
-%\emph{Submitted}
-% 	&	\textbf{The effect of regularization in portfolio selection problems} \\
-%\textsc{2019}
-%	&	\footnotesize{B.K. Pagnoncelli, F. Del Canto, A. Cifuentes}	\\
-%}
-
-
-%Section: Research Projects
-\section{Research Projects}
-\setTabParams{0cm,11cm,1}
+%Section: Research Experience
+\section{Research Experience}
+\setTabParams{17ex,12cm,1}
 
 \tab{
 \textsc{2017 - 2018}
@@ -160,22 +132,68 @@ ItalicFont = Fontin-Italic.otf
 	&	\emph{Research Assistant of Bernardo Pagnoncelli and Arturo Cifuentes}
 }
 
-%Section: Presentations
-\section{Presentations}
-\setTabParams{0cm,11cm,1}
+%\tab{
+%\textsc{Nov 2021 -- Present}
+% 	&	\textbf{Research Assistant of Conor Walsh and Costas Arkolakis} \\[0.2ex]
+%}
 
-\tab{
-\textsc{October}
- 	&	\textbf{3rd Eastern Conference on Mathematical Finance}			\\[0.2ex]
-\textsc{2018}
-	&	Illinois Institute of Technology, Illinois, United States 				\\[0.2ex]
-	&	\emph{The effect of regularization in portfolio selection problems}	\\[0.2ex]
-	&	\emph{Poster presentation}
+
+%Section: Relevant Coursework
+\section{Relevant Coursework (MIT similar subject code)}
+\setTabParams{3cm,12cm,1}
+
+\tab{\textsc{Mathematics}
+	&	Real Analysis (18.100B) and Topology (18.901)\\[0.2ex]
+\textsc{(at PUC-Chile)}
+	&	Functional Analysis and Measure Theory (18.102)\\[0.2ex]
+	&	Ordinary and Partial Differential Equations (18.032 and 18.152)\\[0.2ex]
+	&	Complex Variables I (18.04)\\[0.2ex]
+}
+
+\tab{\textsc{Economics}
+	&	Microeconomic Theory I (14.121), II (14.122) \& III (14.124) \\[0.2ex]
+\textsc{(at PUC-Chile)} 
+	&	Econometric Theory I (14.380) \& II (14.381)\\[0.2ex]
+}
+
+\tab{\textsc{Computer Science}
+	&	Pattern Recognition (6.862, as listener)\\[0.2ex]
+\textsc{(at PUC-Chile)} 
+}
+
+\tab{\textsc{Computer Science}
+	&	Advanced NLP (6.864, as listener)\\[0.2ex]
+\textsc{(at MIT)} 
+	&	Statistics, Computation and Applications (6.439, as listener)\\[0.2ex]
 }
 
 %Section: Teaching
 \section{Teaching}
 \setTabParams{0cm,11cm,1}
+
+\tab{
+\textsc{2021} 
+	&	\textbf{Python course}	\\[0.2ex]
+	&	Graduate (M.A. and Ph.D.), Pontificia Universidad Católica de Chile
+}
+
+\tab{
+\textsc{2021} 
+	&	\textbf{LaTeX course}	\\[0.2ex]
+	&	Graduate (M.A. and Ph.D.), Pontificia Universidad Católica de Chile
+}
+
+\tab{
+\textsc{2021} 
+	&	\textbf{Math applications for Economics and Business}	\\[0.2ex]
+	&	Undergraduate, Pontificia Universidad Católica de Chile
+}
+
+\tab{
+\textsc{2021} 
+	&	\textbf{Principles of Economics}						\\[0.2ex]
+	&	Undergraduate, Pontificia Universidad Católica de Chile
+}
 
 \tab{
 \textsc{2020} 
@@ -202,7 +220,7 @@ ItalicFont = Fontin-Italic.otf
 \tab{
 \raggedleft{\textsc{Graduate}} 
 	&	\textbf{Mathematical Economics} (\emph{Prof. Jaime Casassus})
-}
+}\\[-3ex]
 
 \tab{
 \textsc{Undergraduate} 
@@ -222,19 +240,19 @@ ItalicFont = Fontin-Italic.otf
 \setTabParams{0cm,11cm,0}
 
 \tab{
-\textsc{2020}
+\textsc{2020 - 2021}
  	&	\textbf{Academic tutoring to recently admitted students}	\\[0.2ex]
 	&	Graduate (M.A.), Pontificia Universidad Católica de Chile	\\
 }
 
 \tab{
-\textsc{2020}
+\textsc{2020 - 2021}
  	&	\textbf{Tutoring to graduate thesists}					\\[0.2ex]
 	&	Graduate (M.A. and Ph.D.), Pontificia Universidad Católica de Chile	\\
 }
 
 \tab{
-\textsc{2011}
+\textsc{\hspace{4.7ex} 2011}
 	&	\textbf{Volunteering work as math high school teacher}	\\[0.2ex]
 	&	Crea+, Chile
 }
@@ -263,10 +281,10 @@ ItalicFont = Fontin-Italic.otf
 
 \tab{
 \textsc{Basic knowledge:}
-	&	Office, R, Java, Swift, Unity 	\\[0.5ex]
+	&	HTML, CSS, Office, R, Java, Swift, Unity 	\\[0.5ex]
 
 \textsc{Advanced knowledge:}
-	&	{\fb \LaTeX}, Python, Stata, MATLAB, Gurobi, C\#	\\
+	&	{\LaTeX}, Python, Stata, MATLAB, Gurobi, C\#	\\
 }
 
 %Section: Scholarships and additional info
@@ -276,34 +294,28 @@ ItalicFont = Fontin-Italic.otf
 \tab{
 \textsc{2019}
 	&	\textbf{Thesis graded with Maximum Distinction}				\\[0.2ex]
-	&	M.A. in Economics, Pontificia Universidad Católica de Chile		\\
-	&	\\
+	&	M.A. in Economics, Pontificia Universidad Católica de Chile		\\[2ex]
 
 \textsc{2019}
 	&	\textbf{Degree granted with Maximum Distinction}			\\[0.2ex]
-	&	M.A. in Economics, Pontificia Universidad Católica de Chile		\\
-	&	\\
+	&	M.A. in Economics, Pontificia Universidad Católica de Chile		\\[2ex]
 
 \textsc{2018 - 2019} 
 	&	\textbf{Master's Scholarship in Chile}						\\[0.2ex]
 	&	Formation of Advanced Human Capital Program				\\[0.2ex]
-	&	\href{https://www.anid.cl}{ANID} (formerly CONICYT), Chile		\\
-	&	\\
+	&	\href{https://www.anid.cl}{ANID} (formerly CONICYT), Chile		\\[2ex]
 	
 \textsc{2017}
 	&	\textbf{Degree granted with two votes of Distinction}			\\[0.2ex]
-	&	B.S. in Mathematics, Pontificia Universidad Católica de Chile		\\
-	&	\\
+	&	B.S. in Mathematics, Pontificia Universidad Católica de Chile	\\[2ex]
 
 \textsc{2015 - 2017} 
 	&	\textbf{Rolando Chuaqui Scholarship}						\\[0.2ex]
-	&	Math Faculty, Pontificia Universidad Católica de Chile			\\
-	&	\\
+	&	Math Department, Pontificia Universidad Católica de Chile		\\[2ex]
 	
 \textsc{2015}
 	&	\textbf{Matrícula de Honor (Academic Excellence Scholarship)}	\\[0.2ex]
-	&	Pontificia Universidad Católica de Chile						\\
-	&	\\
+	&	Pontificia Universidad Católica de Chile						\\[2ex]
 
 \textsc{2010, 2013}
 	&	\textbf{Highest National Score, Mathematics}				\\[0.2ex]
@@ -330,37 +342,27 @@ ItalicFont = Fontin-Italic.otf
 \textsc{Professor}
 	&	Department of Economics, Pontificia Universidad Católica de Chile		\\[0.2ex]
 \textsc{Jeanne Lafortune}
-	& 	Vicuña Mackenna 4860, Macul, Santiago, Chile					\\[0.2ex]
-	&	\href{mailto:jlafortune@uc.cl}{jlafortune@uc.cl}					\\[0.2ex]
-	&	\\
+	& 	\href{mailto:jlafortune@uc.cl}{jlafortune@uc.cl}					\\[1.5ex]
 
 \textsc{Professor}
 	&	Department of Economics, Pontificia Universidad Católica de Chile		\\[0.2ex]
 \textsc{Tomás Rau}
-	& 	Vicuña Mackenna 4860, Macul, Santiago, Chile					\\[0.2ex]
-	&	\href{mailto:trau@uc.cl}{trau@uc.cl}							\\[0.2ex]
-	&	\\
+	& 	\href{mailto:trau@uc.cl}{trau@uc.cl}							\\[1.5ex]
 
 \textsc{Professor}
-	&	School of Business, Universidad Adolfo Ibáñez (UAI)				\\[0.2ex]
+	&	Associate Professor, SKEMA Business School				\\[0.2ex]
 \textsc{Bernardo Pagnoncelli}
-	& 	El Vergel 2488 d.303, Providencia, Santiago, Chile				\\[0.2ex]
-	&	\href{mailto:bernardo.pagnoncelli@uai.cl}{bernardo.pagnoncelli@uai.cl}	\\[0.2ex]
-	&	\\
+	& 	\href{mailto:bernardo.pagnoncelli@skema.edu}{bernardo.pagnoncelli@skema.edu}	\\[1.5ex]
 
 \textsc{Professor}
 	&	Senior Research Associate, CLAPES UC	 					\\[0.2ex]
 \textsc{Arturo Cifuentes}
-	& 	Los Leones 1300 d.1202, Providencia, Santiago, Chile				\\[0.2ex]
-	&	\href{mailto:ac@arturocifuentes.com}{ac@arturocifuentes.com}		\\[0.2ex]
-	&	\\
+	& 	\href{mailto:ac@arturocifuentes.com}{ac@arturocifuentes.com}, \href{http://www.arturocifuentes.com/}{www.arturocifuentes.com}		\\[1.5ex]
 
 \textsc{Professor}
 	&	Department of Mathematics, Pontificia Universidad Católica de Chile	\\[0.2ex]
 \textsc{Duvan Henao}
-	& 	Vicuña Mackenna 4860, Macul, Santiago, Chile					\\[0.2ex]
-	&	\href{mailto:dhenao@mat.puc.cl}{dhenao@mat.puc.cl}			\\[0.2ex]
-	&	\\
+	& 	\href{mailto:dhenao@mat.puc.cl}{dhenao@mat.puc.cl}			\\[1.5ex]
 }
 
 \end{document}
