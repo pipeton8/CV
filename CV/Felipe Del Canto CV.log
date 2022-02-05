@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.30)  31 OCT 2021 16:50
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.30)  5 FEB 2022 09:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -575,137 +575,143 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
 \i=\count316
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
 \i=\count317
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
 \i=\count318
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 \i=\count319
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 \i=\count320
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+\i=\count321
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
 [1
 
 ]
-\i=\count321
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
-
- []
-
 \i=\count322
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 \i=\count323
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
 \i=\count324
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 \i=\count325
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 \i=\count326
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
 \i=\count327
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 \i=\count328
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 \i=\count329
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
 \i=\count330
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
 \i=\count331
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
 \i=\count332
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
 \i=\count333
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
 \i=\count334
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
 \i=\count335
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
 [2]
 \i=\count336
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
 
  []
 
 \i=\count337
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+
+ []
+
+\i=\count338
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
 
  []
 
@@ -716,7 +722,7 @@ Package rerunfilecheck Info: File `"Felipe Del Canto CV".out' has not changed.
 Here is how much of TeX's memory you used:
  12149 strings out of 476919
  230465 string characters out of 5821839
- 631713 words of memory out of 5000000
+ 627566 words of memory out of 5000000
  31982 multiletter control sequences out of 15000+600000
  406972 words of font info for 53 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

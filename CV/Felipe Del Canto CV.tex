@@ -30,30 +30,30 @@
 		\ifdim0cm=#1				%
 			\def \firstCol {r}		%
 		\else						%
-			\def \firstCol {p{#1}}		%
-		\fi						%
+			\def \firstCol {p{#1}}	%
+		\fi							%
 	\else \ifnum1=\i				%
 		\ifdim0cm=#1				%
 			\def \secondCol {l}		%
 		\else						%
 			\def \secondCol{p{#1}}	%
-		\fi						%
+		\fi							%
 	\else \ifnum2=\i				%
-		\ifnum0=#1				%
+		\ifnum0=#1					%
 			\def \sep {}			%
 		\else						%
 			\def \sep {|}			%
-		\fi						%
+		\fi							%
 	\fi \fi \fi						%
 	\advance\i by1					%
 }
-
-\newcommand{\tab}[1]{					%
-	\newcount\i						%
-	\forlistloop{\setCols}{\tablength}		%
+				
+\newcommand{\tab}[1]{							%
+	\newcount\i									%
+	\forlistloop{\setCols}{\tablength}			%
 	\begin{tabular}{\firstCol \sep \secondCol}	%
-		#1							%
-	\end{tabular} \\						%
+		#1										%
+	\end{tabular} \\[.5ex]						%
 }
 
 %: Titles
@@ -132,39 +132,40 @@
 	&	\emph{Research Assistant of Bernardo Pagnoncelli and Arturo Cifuentes}
 }
 
-%\tab{
-%\textsc{Nov 2021 -- Present}
-% 	&	\textbf{Research Assistant of Conor Walsh and Costas Arkolakis} \\[0.2ex]
-%}
+\tab{
+\textsc{Dec 2021 -- Present}
+ 	&	\textbf{Staff Associate at Columbia Business School}	\\
+	&	\emph{PIs: Conor Walsh, Costas Arkolakis (Yale), and John Grigsby (Princeton)} \\[0.2ex]
+}
 
 
 %Section: Relevant Coursework
-\section{Relevant Coursework (MIT similar subject code)}
+\section{Relevant Coursework}
 \setTabParams{3cm,12cm,1}
 
 \tab{\textsc{Mathematics}
-	&	Real Analysis (18.100B) and Topology (18.901)\\[0.2ex]
+	&	Real Analysis, and Topology\\[0.2ex]
 \textsc{(at PUC-Chile)}
-	&	Functional Analysis and Measure Theory (18.102)\\[0.2ex]
-	&	Ordinary and Partial Differential Equations (18.032 and 18.152)\\[0.2ex]
-	&	Complex Variables I (18.04)\\[0.2ex]
+	&	Functional Analysis, and Measure Theory\\[0.2ex]
+	&	Ordinary, and Partial Differential Equations\\[0.2ex]
+	&	Complex Variables \\[0.2ex]
 }
 
 \tab{\textsc{Economics}
-	&	Microeconomic Theory I (14.121), II (14.122) \& III (14.124) \\[0.2ex]
+	&	Microeconomic Theory I, II \& III \\[0.2ex]
 \textsc{(at PUC-Chile)} 
-	&	Econometric Theory I (14.380) \& II (14.381)\\[0.2ex]
+	&	Econometric Theory I \& II \\[0.2ex]
 }
 
 \tab{\textsc{Computer Science}
-	&	Pattern Recognition (6.862, as listener)\\[0.2ex]
+	&	Pattern Recognition (as listener)\\[0.2ex]
 \textsc{(at PUC-Chile)} 
 }
 
 \tab{\textsc{Computer Science}
-	&	Advanced NLP (6.864, as listener)\\[0.2ex]
+	&	Advanced NLP (as listener)\\[0.2ex]
 \textsc{(at MIT)} 
-	&	Statistics, Computation and Applications (6.439, as listener)\\[0.2ex]
+	&	Statistics, Computation and Applications (as listener)\\[0.2ex]
 }
 
 %Section: Teaching
