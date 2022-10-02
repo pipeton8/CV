@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.30)  5 MAY 2022 13:02
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.30)  2 OCT 2022 18:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -173,6 +173,9 @@ put line 308.
 LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks23
 \dt@b=\toks24
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/marvosym/marvosym.sty
+Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
@@ -382,37 +385,37 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip51
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 22.
-Package hyperref Info: Option `breaklinks' set `true' on input line 22.
+Package hyperref Info: Option `colorlinks' set `true' on input line 23.
+Package hyperref Info: Option `breaklinks' set `true' on input line 23.
  (./Felipe Del Canto CV.aux)
 \openout1 = `"Felipe Del Canto CV.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 6
-4.
+5.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -459,60 +462,60 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 64.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 64.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 64.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 64.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 64.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 64.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 64.
-LaTeX Font Info:    Redeclaring math accent \check on input line 64.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 64.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 64.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 64.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 64.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 65.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 65.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 65.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 65.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 65.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 65.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 65.
+LaTeX Font Info:    Redeclaring math accent \check on input line 65.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 65.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 65.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 65.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 65.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 64.
+(Font)              `operators' in the math version `normal' on input line 65.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Fontin(0)/m/n on input line 64.
+(Font)                  OT1/cmr/m/n --> TU/Fontin(0)/m/n on input line 65.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 64.
+(Font)              `operators' in the math version `bold' on input line 65.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Fontin(0)/m/n on input line 64.
+(Font)                  OT1/cmr/bx/n --> TU/Fontin(0)/m/n on input line 65.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Fontin(0)/m/n --> TU/Fontin(0)/m/n on input line 64.
+(Font)                  TU/Fontin(0)/m/n --> TU/Fontin(0)/m/n on input line 65.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Fontin(0)/m/it on input line 64.
+(Font)                  OT1/cmr/m/it --> TU/Fontin(0)/m/it on input line 65.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Fontin(0)/b/n on input line 64.
+(Font)                  OT1/cmr/bx/n --> TU/Fontin(0)/b/n on input line 65.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 64.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 65.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 64.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 65.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Fontin(0)/m/n --> TU/Fontin(0)/b/n on input line 64.
+(Font)                  TU/Fontin(0)/m/n --> TU/Fontin(0)/b/n on input line 65.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Fontin(0)/b/it on input line 64.
+(Font)                  OT1/cmr/bx/it --> TU/Fontin(0)/b/it on input line 65.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 64.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 65.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 64.
-Package hyperref Info: Link coloring ON on input line 64.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 65.
+Package hyperref Info: Link coloring ON on input line 65.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -526,86 +529,85 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count309
 )
-LaTeX Info: Redefining \ref on input line 64.
-LaTeX Info: Redefining \pageref on input line 64.
-LaTeX Info: Redefining \nameref on input line 64.
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
  (./Felipe Del Canto CV.out) (./Felipe Del Canto CV.out)
 \@outlinefile=\write3
 \openout3 = `"Felipe Del Canto CV.out"'.
 
+LaTeX Font Info:    Trying to load font information for U+mvs on input line 72.
+
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/marvosym/umvs.fd)
 \i=\count310
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 86.
+(Font)              <7> on input line 96.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 86.
+(Font)              <5> on input line 96.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 \i=\count311
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
-
- []
-
 \i=\count312
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
-
+Overfull \hbox (29.9345pt too wide) in paragraph at lines 112--114
+[][] 
  []
 
 \i=\count313
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
 \i=\count314
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
 \i=\count315
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 \i=\count316
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 \i=\count317
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 \i=\count318
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
 \i=\count319
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 \i=\count320
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 \i=\count321
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
@@ -614,124 +616,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--176
 ]
 \i=\count322
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
 \i=\count323
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
 \i=\count324
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
 \i=\count325
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 
  []
 
 \i=\count326
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
-\i=\count327
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
-
- []
-
-\i=\count328
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
-
- []
-
-\i=\count329
-
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
-
- []
-
-\i=\count330
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
-
- []
-
-\i=\count331
-
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
-
- []
-
-\i=\count332
-
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
-
- []
-
-\i=\count333
-
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
-
- []
-
-\i=\count334
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
-
- []
-
-\i=\count335
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
-
- []
-
-[2]
-\i=\count336
-
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
-
- []
-
-\i=\count337
-
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
-
- []
-
-\i=\count338
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
-
- []
-
-\i=\count339
-
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
-
- []
-
-[3] (./Felipe Del Canto CV.aux)
+[2] (./Felipe Del Canto CV.aux)
 Package rerunfilecheck Info: File `"Felipe Del Canto CV".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 12149 strings out of 476919
- 230465 string characters out of 5821839
- 627566 words of memory out of 5000000
- 31982 multiletter control sequences out of 15000+600000
- 406972 words of font info for 53 fonts, out of 8000000 for 9000
+ 12433 strings out of 476919
+ 233082 string characters out of 5821839
+ 629210 words of memory out of 5000000
+ 32261 multiletter control sequences out of 15000+600000
+ 407377 words of font info for 52 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 83i,11n,89p,1003b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,8n,89p,1024b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Felipe Del Canto CV.pdf (3 pages).
+Output written on Felipe Del Canto CV.pdf (2 pages).
