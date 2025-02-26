@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.30)  26 FEB 2025 14:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.30)  26 FEB 2025 14:48
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**CV.tex
-(./CV.tex
+**"Felipe del Canto CV.tex"
+(./Felipe del Canto CV.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -809,8 +809,8 @@ File: tikzlibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 File: pgflibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))) (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
 Library (tcolorbox): 'tcbposter.code.tex' version '4.42'
-)) (./CV.aux)
-\openout1 = `CV.aux'.
+)) (./Felipe del Canto CV.aux)
+\openout1 = `"Felipe del Canto CV.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/lmm/m/it on input line 160.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 160.
@@ -917,9 +917,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 160.
 LaTeX Info: Redefining \pageref on input line 160.
 LaTeX Info: Redefining \nameref on input line 160.
- (./CV.out) (./CV.out)
+ (./Felipe del Canto CV.out) (./Felipe del Canto CV.out)
 \@outlinefile=\write6
-\openout6 = `CV.out'.
+\openout6 = `"Felipe del Canto CV.out"'.
 
 \c@lstlisting=\count366
  (/usr/local/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
@@ -943,22 +943,22 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 176.
- (./CV.bbl) [1
+ (./Felipe del Canto CV.bbl) [1
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./CV.aux)
-Package rerunfilecheck Info: File `CV.out' has not changed.
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./Felipe del Canto CV.aux)
+Package rerunfilecheck Info: File `"Felipe del Canto CV".out' has not changed.
 (rerunfilecheck)             Checksum: D589408CC8C515CA52B682FBF0E51C09;1005.
  ) 
 Here is how much of TeX's memory you used:
  32023 strings out of 478994
- 624197 string characters out of 5858183
- 1047524 words of memory out of 5000000
+ 624505 string characters out of 5858183
+ 1047632 words of memory out of 5000000
  48898 multiletter control sequences out of 15000+600000
  443328 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,11n,107p,984b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,11n,107p,1003b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cfr-lm/t1-clm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cfr-lm/dotdigits-clm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on CV.pdf (2 pages, 97711 bytes).
+Output written on "Felipe del Canto CV.pdf" (2 pages, 97711 bytes).
 PDF statistics:
  122 PDF objects out of 1000 (max. 8388607)
  89 compressed objects within 1 object stream

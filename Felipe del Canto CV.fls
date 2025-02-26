@@ -1,9 +1,9 @@
-PWD /Users/pipeton8/Downloads/CV
+PWD /Users/pipeton8/GitHub/CV
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT CV.tex
-OUTPUT CV.log
+INPUT Felipe del Canto CV.tex
+OUTPUT Felipe del Canto CV.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
@@ -1209,12 +1209,12 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libr
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
-OUTPUT CV.pdf
+OUTPUT Felipe del Canto CV.pdf
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
-INPUT ./CV.aux
-INPUT CV.aux
-INPUT CV.aux
-OUTPUT CV.aux
+INPUT ./Felipe del Canto CV.aux
+INPUT Felipe del Canto CV.aux
+INPUT Felipe del Canto CV.aux
+OUTPUT Felipe del Canto CV.aux
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
@@ -1292,17 +1292,17 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestri
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT ./CV.out
-INPUT CV.out
-INPUT ./CV.out
-INPUT CV.out
-INPUT ./CV.out
-INPUT CV.out
-INPUT ./CV.out
-INPUT CV.out
-INPUT ./CV.out
-INPUT ./CV.out
-OUTPUT CV.out
+INPUT ./Felipe del Canto CV.out
+INPUT Felipe del Canto CV.out
+INPUT ./Felipe del Canto CV.out
+INPUT Felipe del Canto CV.out
+INPUT ./Felipe del Canto CV.out
+INPUT Felipe del Canto CV.out
+INPUT ./Felipe del Canto CV.out
+INPUT Felipe del Canto CV.out
+INPUT ./Felipe del Canto CV.out
+INPUT ./Felipe del Canto CV.out
+OUTPUT Felipe del Canto CV.out
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
@@ -1352,10 +1352,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplb8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplri8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplri8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
-INPUT ./CV.bbl
-INPUT CV.bbl
-INPUT ./CV.bbl
-INPUT CV.bbl
+INPUT ./Felipe del Canto CV.bbl
+INPUT Felipe del Canto CV.bbl
+INPUT ./Felipe del Canto CV.bbl
+INPUT Felipe del Canto CV.bbl
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -1379,9 +1379,9 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/public/cfr-lm/clmr2j8t10.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cfr-lm/lmr8ttl10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cfr-lm/dd-lmr10.tfm
-INPUT CV.aux
-INPUT ./CV.out
-INPUT ./CV.out
+INPUT Felipe del Canto CV.aux
+INPUT ./Felipe del Canto CV.out
+INPUT ./Felipe del Canto CV.out
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cfr-lm/t1-clm.enc
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cfr-lm/dotdigits-clm.enc
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc
