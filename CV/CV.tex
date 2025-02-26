@@ -1,0 +1,379 @@
+%
+%Academic CV LaTeX Template
+% Author: Dubasi Pavan Kumar
+% LinkedIn: https://www.linkedin.com/in/im-pavankumar/
+% License: MIT
+%
+% For errors, suggestions, or improvements, please contact:
+% Email: pavankumard.pg19.ma@nitp.ac.in
+%
+
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+% \usepackage{natbib}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+\usepackage{datetime}
+
+% Bibliography
+\makeatletter
+\renewcommand{\@biblabel}[1]{}
+\makeatother
+\bibliographystyle{plainnat}
+
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt} % Addressing fancyhdr warning
+
+% Date format
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR
+}
+
+% Hyperlink setup (moved after fancyhdr to address warning)
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-0.5ex}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item[]{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#2}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#4}\\
+    \end{tabular*}
+    \vspace{-1ex}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\ListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
+\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+\newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif)
+\newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS)
+\newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif
+\newcommand{\headerfontvii}{\fontfamily{qhv}\selectfont} % Quasi-Helvetica (another Arial/Calibri alternative)
+\newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option)
+\newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative)
+\newcommand{\headerfontx}{\fontfamily{bch}\selectfont} % Charter (clean serif font)
+
+\begin{document}
+\headerfontiii
+
+% Header
+\begin{center}
+    {\Huge\textbf{Felipe Del Canto}} \\[1ex]
+
+	\small{
+    \href{mailto:felipe.delcanto@icloud.com}{felipe.delcanto@icloud.com} | 
+    \href{https://pipeton8.github.io/}{pipeton8.github.io} \\[1ex]
+	\textit{Last updated: \monthyeardate\today}
+    }
+\end{center}
+
+% Education
+\section{\textbf{Education}}
+\resumeSubHeadingListStart
+	\resumeSubheading
+	{Harvard University}{Cambridge, MA}
+	{Ph.D. Economics}{2023 - 2029 (expected)}
+
+	\resumeSubheading
+	{Pontificia Universidad Católica de Chile}{Santiago, Chile}
+	{M.A. in Economics}{2018 - 2019}
+
+	\resumeSubheading
+	{Pontificia Universidad Católica de Chile}{Santiago, Chile}
+	{B.S. in Mathematics}{2014 - 2017}
+\ListEnd
+
+% Fields
+\section{\textbf{Fields}}
+\resumeHeadingSkillStart
+	\resumeSubItem{Primary:}
+	{Industrial Organization}
+	\resumeSubItem{Secondary:}{Econometrics}
+\ListEnd
+
+% Academic Positions
+\section{\textbf{Academic Positions}}
+\resumeSubHeadingListStart
+	\resumeSubheading
+	{Pontificia Universidad Católica de Chile}{Santiago, Chile}
+	{Adjunct Instructor}{2020 - 2021}
+\ListEnd
+
+% Working Papers
+\section{\textbf{Working Papers}}
+
+\resumeSubHeadingListStart
+	\resumeSubheading
+	{\href{https://www.dropbox.com/scl/fi/yhdiyv3n0waeib74tnrnu/InflationRegressivity.pdf?rlkey=t9x4sb14h9fg0hzvvtp8855j2}{\textcolor{darkblue}{Are Inflationary Shocks Regressive? A Feasible Set Approach}}}
+	{Quarterly Journal of Economics, R\&R}
+	{Joint with John Grigsby, Eric Qian and Conor Walsh}
+	{}
+\ListEnd
+
+% Publications
+\section{\textbf{Publications}}
+
+\begingroup
+	\nocite{*}
+	\renewcommand{\section}[2]{}
+	\bibliography{publications.bib}
+\endgroup
+
+% Research Experience
+\section{\textbf{Research Assistance}}
+\resumeSubHeadingListStart
+	\resumeSubheading
+	{UAI-Chile and CLAPES-UC}{Santiago, Chile}
+	{Bernardo Pagnoncelli and Arturo Cifuentes}{2017 - 2018}
+
+	\resumeSubheading
+	{MIT}{Cambridge, MA}
+	{Ricardo Caballero}{2021 - 2022}
+
+	\resumeSubheading
+	{Columbia Business School}{New York, NY}
+	{Conor Walsh (Columbia), Costas Arkolakis (Yale) and John Grigsby (Princeton)}{2021 - 2023}
+\ListEnd
+
+% Teaching Experience
+\section{\textbf{Teaching Experience}}
+
+\resumeSubHeadingListStart
+	\resumeSubheading
+	{Python Course (Graduate)}
+	{Pontificia Universidad Católica de Chile}
+	{Lecturer}
+	{Spring 2020, 2021}
+
+	\resumeSubheading
+	{LaTeX Course (Graduate)}
+	{Pontificia Universidad Católica de Chile}
+	{Lecturer}
+	{Spring 2021}
+
+	\resumeSubheading
+	{Math Applications for Economics and Business (Undergraduate)}
+	{Pontificia Universidad Católica de Chile}
+	{Lecturer}
+	{Fall 2020, Spring 2021}
+
+	\resumeSubheading
+	{Principles of Economics (Undergraduate)}
+	{Pontificia Universidad Católica de Chile}
+	{Lecturer}
+	{Spring 2020, Fall 2020, Spring 2021}
+
+	\resumeSubheading
+	{Mathematical Economics (Graduate)}
+	{Pontificia Universidad Católica de Chile}
+	{Teaching assistant to Jaime Casassus}
+	{Fall 2018}
+
+	\resumeSubheading
+	{Mathematical Economics (Graduate)}
+	{Pontificia Universidad Católica de Chile}
+	{Teaching assistant to Jaime Casassus}
+	{Spring 2018}
+
+	\resumeSubheading
+	{Advanced Microeconomics (Undergraduate)}
+	{Pontificia Universidad Católica de Chile}
+	{Teaching assistant to Felipe Zurita}
+	{Spring 2019}
+
+	\resumeSubheading
+	{Calculus I (Undergraduate)}
+	{Pontificia Universidad Católica de Chile}
+	{Teaching assistant to Álvaro Cofré and Luis Disset}
+	{Spring 2015}
+
+	\resumeSubheading
+	{Introduction to Calculus (Undergraduate)}
+	{Pontificia Universidad Católica de Chile}
+	{Teaching assistant to Duvan Henao and Mario Ponce}
+	{Spring 2015, 2016}
+
+	\resumeSubheading
+	{Linear Algebra (Undergraduate)}
+	{Pontificia Universidad Católica de Chile}
+	{Teaching assistant to Jan Kiwi and Alejandro Ramirez}
+	{Spring 2016, Fall 2017}
+
+	\resumeSubheading
+	{Meaasure Theory (Undergraduate)}
+	{Pontificia Universidad Católica de Chile}
+	{Teaching assistant to Alejandro Ramirez}
+	{Spring 2018}
+
+	\resumeSubheading
+	{Multivariable Calculus (Undergraduate)}
+	{Pontificia Universidad Católica de Chile}
+	{Teaching assistant to Martin Chuaqui}
+	{Fall 2017}
+
+	\resumeSubheading
+	{Principles of Economics (Undergraduate)}
+	{Pontificia Universidad Católica de Chile}
+	{Teaching assistant to Pinjas Albagli}
+	{Spring 2017}
+
+\ListEnd
+
+% Awards and Honors
+\section{\textbf{Awards and Honors}}
+
+\resumeSubHeadingListStart
+	\resumeSubheading
+	{Thesis graded with Maximum Distinction}
+	{2019}
+	{M.A. in Economics}
+
+	\resumeSubheading
+	{Degree granted with Maximum Distinction}
+	{2019}
+	{M.A. in Economics}
+
+	\resumeSubheading
+	{Masters's Scholarship in Chile}
+	{2018 - 2019}
+	{ANID (formerly CONICYT), Chile}
+
+	\resumeSubheading
+	{Degree granted with two votes of Distinction}
+	{2017}
+	{B.S. in Mathematics}
+
+	\resumeSubheading
+	{Rolando Chuaqui Scholarship}
+	{2015 - 2017}
+	{Math Department, Pontificia Universidad Católica de Chile}
+
+	\resumeSubheading
+	{Matrícula de Honor (Academic Excellence Scholarship)}
+	{2015}
+	{Pontificia Universidad Católica de Chile}
+
+	\resumeSubheading
+	{Highrest National Score, Matehamtics}
+	{2010, 2013}
+	{University Entrance Exam (PSU)}
+
+\ListEnd
+
+
+% Skills
+\section{\textbf{Skills}}
+\resumeHeadingSkillStart
+	\resumeSubItem{Advanced knowledge:}
+	{QGIS, Python, Stata, MATLAB, LaTeX, Microsoft Office, Gurobi}
+	\resumeSubItem{Basic knowledge:}{R, HTML, CSS, Java, Swift, Unity, C\#}
+	\resumeSubItem{Languages:}{Spanish (native), English (fluent, TOEFL: 110)}
+	\resumeSubItem{Others:}{GRE (Quant: 170, Verbal: 161)}
+\ListEnd
+
+
+\end{document}

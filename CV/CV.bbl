@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Pagnoncelli et~al.(2020)Pagnoncelli, del Canto, and
+  Cifuentes]{PagnoncelliEtAl2020}
+Bernardo~K. Pagnoncelli, Felipe del Canto, and Arturo Cifuentes.
+\newblock The effect of regularization in portfolio selection problems.
+\newblock \emph{TOP}, 29\penalty0 (1):\penalty0 156--176, July 2020.
+\newblock ISSN 1863-8279.
+\newblock \doi{10.1007/s11750-020-00578-7}.
+\newblock URL \url{http://dx.doi.org/10.1007/s11750-020-00578-7}.
+
+\end{thebibliography}
